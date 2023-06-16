@@ -1,0 +1,161 @@
+.nav{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color: Black;
+	font-weight: 500;
+}
+.landing{
+	background:url("../res/images/landing.jpeg") no-repeat center center fixed;	
+	height:91.6vh;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover; 
+	transition: opacity 1s;
+}
+.landing:hover{
+	opacity:0.67;
+}
+#blue_bg{
+	 background:url("../res/images/bg.jpeg");
+     background-size:cover;
+}
+/* Below code is to make landing text change its size when we hover over it*/
+/*learning to work with svg was learnt from : https://www.youtube.com/watch?v=IM8eTD01UE8 */
+svg:hover .landing_text{
+	font-size: 210%;
+	text-shadow: white 0px 0px 10px;
+	font-weight: 1000;
+	
+}
+
+/*below code makes the transition period of size change to 1s and google fonts used here */
+.landing_text{
+	transition: font-size 1s, text-shadow 1s, font-weight 1s;
+	/*font-family: 'Merienda One', cursive;*/
+	font-family: 'Raleway', sans-serif;
+}
+
+/* below code used to position text to center ussing- flex-box css*/
+/* further positioning was done by adjusting height width and x, y coordinates of svg element*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+/*css fro quotes below*/
+#legend-heading{
+	font-family: 'Raleway', sans-serif;
+	font-size: 60px;
+	color:#ff8533;
+}
+#quotes{
+	background-color: #00ace6;
+}
+.leg-quote{
+	font-family: 'Merienda One', cursive;
+	font-size: 27px;
+	text-align: justify;
+}
+.legends{
+	font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+	text-align: right;
+
+}
+/*hr tag property taken from https://css-tricks.com/examples/hrs/*/
+hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+	clear:both;
+}
+
+/*css for path of pages*/
+#path{
+    background-color: #00ace6;
+    font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+
+}
+#load_screen{
+      background: white;
+      opacity: 1;
+      position: fixed;
+      z-index:10;
+      top: 0px;
+      width: 100%;
+      height: 1600px;
+  }
+  #load_screen > #loading{
+      color:#FFF;
+      /*width:120px;
+      height:24px;
+      margin: 300px auto;*/
+      position: fixed;
+      top: 30%;
+      left: 40%;
+      /*margin-top: -50px;
+      margin-left: -100px;*/
+ }
+#odi{
+	
+	background:url("../res/images/1d.jpeg");
+	background-size: cover;	
+}
+.format{
+		text-decoration: none !important;	
+}
+#pl{
+	
+	background:url("../res/images/pl.jpeg");
+	background-size: cover;	
+}
+#test{
+	
+	background:url("../res/images/test.jpeg");
+	background-size: cover;	
+}
+#t2{
+	
+	background:url("../res/images/t2.jpeg");
+	background-size: cover;	
+}
+#bio{
+	background-color: #00ace6;
+}
+#up {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 5; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4d79ff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+#p1{
+	background:url("../res/images/p1.jpeg")no-repeat center center fixed; 	
+    min-height: 250px;  
+	width:100%;
+    background-size: cover; 
+
+}
+#p2{
+	background:url("../res/images/p2.jpeg")no-repeat center center fixed;	
+    min-height: 250px;  
+	width:100%;
+    background-size: cover; 
+
+}
+.links{
+	transition: opacity 0.5s;
+}
+.links:hover{
+	opacity: 0.7;
+}
